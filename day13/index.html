@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+  <title>Day 13</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+  <h1>JavaScript libraries</h1>
+
+  <div id="model-container">
+    <model-viewer
+    src="a1.glb"
+    field-of-view="60deg"
+    ar ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    poster="poster.webp"
+    shadow-intensity="1">
+
+
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+    </model-viewer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

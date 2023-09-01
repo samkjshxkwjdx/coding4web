@@ -1,0 +1,12 @@
+#model-container {
+    width: 70vw;
+    height: 70vw;
+    margin: 0; /* Center the container */
+}
+
+model-viewer {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  
